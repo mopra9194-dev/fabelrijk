@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<title>Mijn Verhalen & Gedichten Blog</title>
+
+<style>
+body{
+  font-family: Georgia, serif;
+  margin:0;
+  background: linear-gradient(#fffaf0,#ffe4e1);
+  color:#333;
+  line-height:1.7;
+}
+
+header{
+  background:#c71585;
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
+
+nav{
+  background:#f08080;
+  text-align:center;
+  padding:10px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 15px;
+  font-weight:bold;
+}
+
+main{
+  max-width:900px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+article{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 5px 12px rgba(0,0,0,.1);
+  margin-bottom:35px;
+}
+
+h2{
+  color:#c71585;
+}
+
+button{
+  background:#c71585;
+  color:white;
+  border:none;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.hidden{
+  display:none;
+  white-space:pre-line;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#f08080;
+  color:white;
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌸 Mijn Verhalen & Gedichten Blog</h1>
+<p>Fantasie, dieren en poëzie in woorden</p>
+</header>
+
+<nav>
+<a href="#anekdotes">Anekdotes</a>
+<a href="#poezie">Poëzie</a>
+</nav>
+
+<main>
+
+<!-- ANEKDOTE -->
+<article id="anekdotes">
+<h2>🐸 Kikker of Pad?</h2>
+<p>Je moet mij niet verwarren met pad 🐸</p>
+
+<div class="hidden" id="anekdotetekst">
+Pad is mijn verre neef. Vandaag maak ik van hem een roast.  
+Pad is niet zo mooi en glad als ik, hij is zo droog als toast.  
+
+Pad leeft niet zoals ik in het water, kan niet zwemmen en springen en is niet helder groen zoals ik 🐸.  
+Pad leeft in het bos en in de tuin, hij is grijsbruin tot roodbruin.  
+
+Hij is net traag als zijn tuin vriendjes: de slakken.  
+Pad denkt dat hij stoer is... Eigenlijk kan hij alleen goed: kwakken.  
+
+Gelukkig kunnen we wel goed samen lachen 🐸
+</div>
+
+<button onclick="toggle('anekdotetekst', this)">Lees meer</button>
+</article>
+
+<!-- ENGELSTALIG GEDICHT -->
+<article id="poezie">
+<h2>🌳 Trees</h2>
+<p>Engelstalig gedicht</p>
+
+<div class="hidden" id="treesgedicht">
+Trees live and breath  
+
+Trees grow through the seasons  
+Just like us humans  
+And the rise and fall of our heartbeat  
+
+Planting a tree can save a life  
+We can help and prepare a tree to survive, and mostly thrive  
+
+So that a tree opens, flowers, blossoms and produces new leaves during the fall  
+
+Like young girl growing and turning into a woman  
+Standing strong, proud and tall
+</div>
+
+<button onclick="toggle('treesgedicht', this)">Lees meer</button>
+</article>
+
+</main>
+
+<footer>
+© 2026 – Mijn persoonlijke blog ✨
+</footer>
+
+<script>
+function toggle(id, btn){
+  const el = document.getElementById(id);
+  if(el.style.display === "block"){
+    el.style.display = "none";
+    btn.textContent = "Lees meer";
+  } else {
+    el.style.display = "block";
+    btn.textContent = "Sluiten";
+  }
+}
+</script>
+
+</body>
+</html>
